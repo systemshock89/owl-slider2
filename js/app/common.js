@@ -35,7 +35,7 @@ $(function () {
 
             owl.owlCarousel({
                 items: 5,
-                loop: true,
+                rewind:true,
                 margin: 24,
                 autoplay: true,
                 autoplayTimeout: 12000,
