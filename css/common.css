@@ -326,8 +326,7 @@ h1{
     transition: opacity 0.1s ease-in-out;
 }
 
-.synced_slider2 .owl-carousel .owl-item.synced .item,
-.synced_slider2 .owl-carousel .owl-item.center .item{
+.synced_slider2 .owl-carousel .owl-item.current .item{
     opacity: 1;
 }
 
