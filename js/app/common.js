@@ -37,6 +37,7 @@ $(function () {
                 //глючит
                 //animateOut: 'owl-backSlide-out',
                 //animateIn: 'owl-backSlide-in',
+
             });
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
@@ -53,6 +54,171 @@ $(function () {
         }
     });
     /* /Index Owl Slider */
+
+
+    /* Index Owl Slider 2 */
+    $(function() {
+        if( $(".index_slider2 .owl-carousel").is("div") ){
+
+            var owl =  $('.index_slider2 .owl-carousel');
+
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 12000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText:  [
+                    "",
+                    ""
+                ],
+
+                // эффект перелистывания
+                animateOut: 'slideOutDown',
+                animateIn: 'flipInX',
+
+                // затухание
+                //animateOut: 'fadeOut',
+
+                // эффект FadeUp
+                //animateOut: 'owl-fadeUp-out',
+                //animateIn: 'owl-fadeUp-in',
+
+                //глючит
+                //animateOut: 'owl-goDown-out',
+                //animateIn: 'owl-goDown-in',
+
+                //глючит
+                //animateOut: 'owl-backSlide-out',
+                //animateIn: 'owl-backSlide-in',
+            });
+
+            owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
+            owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
+
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY>0) {
+                    owl.trigger('prev.owl');
+                } else {
+                    owl.trigger('next.owl');
+                }
+                e.preventDefault();
+            });
+        }
+    });
+    /* /Index Owl Slider 2 */
+
+
+    /* Index Owl Slider 3 */
+    $(function() {
+        if( $(".index_slider3 .owl-carousel").is("div") ){
+
+            var owl =  $('.index_slider3 .owl-carousel');
+
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 12000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText:  [
+                    "",
+                    ""
+                ],
+
+                // эффект перелистывания
+                //animateOut: 'slideOutDown',
+                //animateIn: 'flipInX',
+
+                // затухание
+                animateOut: 'fadeOut',
+
+                // эффект FadeUp
+                //animateOut: 'owl-fadeUp-out',
+                //animateIn: 'owl-fadeUp-in',
+
+                //глючит
+                //animateOut: 'owl-goDown-out',
+                //animateIn: 'owl-goDown-in',
+
+                //глючит
+                //animateOut: 'owl-backSlide-out',
+                //animateIn: 'owl-backSlide-in',
+            });
+
+            owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
+            owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
+
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY>0) {
+                    owl.trigger('prev.owl');
+                } else {
+                    owl.trigger('next.owl');
+                }
+                e.preventDefault();
+            });
+        }
+    });
+    /* /Index Owl Slider 3 */
+
+
+    /* Index Owl Slider 4 */
+    $(function() {
+        if( $(".index_slider4 .owl-carousel").is("div") ){
+
+            var owl =  $('.index_slider4 .owl-carousel');
+
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 12000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText:  [
+                    "",
+                    ""
+                ],
+
+                // эффект перелистывания
+                //animateOut: 'slideOutDown',
+                //animateIn: 'flipInX',
+
+                // затухание
+                //animateOut: 'fadeOut',
+
+                // эффект FadeUp
+                //animateOut: 'owl-fadeUp-out',
+                //animateIn: 'owl-fadeUp-in',
+
+                //глючит
+                //animateOut: 'owl-goDown-out',
+                //animateIn: 'owl-goDown-in',
+
+                //глючит
+                //animateOut: 'owl-backSlide-out',
+                //animateIn: 'owl-backSlide-in',
+            });
+
+            owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
+            owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
+
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY>0) {
+                    owl.trigger('prev.owl');
+                } else {
+                    owl.trigger('next.owl');
+                }
+                e.preventDefault();
+            });
+        }
+    });
+    /* /Index Owl Slider 4 */
 
 
     /* /Carousel Owl Slider */
