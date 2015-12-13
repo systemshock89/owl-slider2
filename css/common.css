@@ -41,6 +41,12 @@ h1{
     position: relative;
 }
 
+.index_slider .owl-item{
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+
 .index_slider .owl-stage{
     -webkit-perspective: 1200px;
     -webkit-perspective-origin-x : 50%;
@@ -130,6 +136,12 @@ h1{
 /*---------INDEX OWL SLIDER 2------------*/
 .index_slider2 {
     position: relative;
+}
+
+.index_slider2 .owl-item{
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
 }
 
 .index_slider2 .owl-stage{
@@ -223,6 +235,12 @@ h1{
     position: relative;
 }
 
+.index_slider3 .owl-item{
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+
 .index_slider3 .owl-stage{
     -webkit-perspective: 1200px;
     -webkit-perspective-origin-x : 50%;
@@ -314,6 +332,12 @@ h1{
     position: relative;
 }
 
+.index_slider4 .owl-item{
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+
 .index_slider4 .owl-stage{
     -webkit-perspective: 1200px;
     -webkit-perspective-origin-x : 50%;
@@ -398,6 +422,200 @@ h1{
     transition: opacity 0.1s ease-in-out;
 }
 /*---------/INDEX OWL SLIDER 4------------*/
+
+
+/*---------INDEX OWL SLIDER 4------------*/
+.index_slider5 {
+    position: relative;
+}
+
+.index_slider5 .owl-item{
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+
+.index_slider5 .owl-stage{
+    -webkit-perspective: 1200px;
+    -webkit-perspective-origin-x : 50%;
+    -webkit-perspective-origin-y : 50%;
+    -moz-perspective : 1200px;
+    -moz-perspective-origin-x : 50%;
+    -moz-perspective-origin-y : 50%;
+    perspective : 1200px;
+}
+
+.index_slider5 .item {
+    width: 960px;
+    height: 350px;
+}
+
+.index_slider5 .item .img-container{
+    position: relative;
+    width: 960px;
+    height: 350px;
+    display: block;
+}
+
+.index_slider5 .item .img-container img {
+    max-width: 960px;
+    max-height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.index_slider5 .owl-carousel .owl-nav [class*=owl-]{
+    width: 28px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    margin: 0;
+    margin-top: -22px;
+    opacity: 0.5;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: url('../img/slider-arrows.png');
+}
+
+.index_slider5 .owl-carousel .owl-nav .owl-prev{
+    left: -40px;
+    background-position: 0 0;
+}
+
+.index_slider5 .owl-carousel .owl-nav .owl-next{
+    right: -40px;
+    background-position: -28px 0;
+}
+
+.index_slider5 .owl-carousel .owl-nav .owl-prev:hover,
+.index_slider5 .owl-carousel .owl-nav .owl-next:hover{
+    opacity: 1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+
+.index_slider5 .owl-carousel .owl-nav .owl-prev:active,
+.index_slider5 .owl-carousel .owl-nav .owl-next:active{
+    opacity: 0.8;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+}
+
+.index_slider5 .owl-carousel .owl-nav .owl-prev,
+.index_slider5 .owl-carousel .owl-nav .owl-prev:hover,
+.index_slider5 .owl-carousel .owl-nav .owl-next,
+.index_slider5 .owl-carousel .owl-nav .owl-next{
+    -webkit-transition: opacity 0.1s ease-in-out;
+    -moz-transition: opacity 0.1s ease-in-out;
+    -o-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
+}
+/*---------/INDEX OWL SLIDER 5------------*/
+
+
+/*---------INDEX OWL SLIDER 6------------*/
+.index_slider6 {
+    position: relative;
+}
+
+.index_slider6 .owl-item{
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+}
+
+.index_slider6 .owl-stage{
+    -webkit-perspective: 1200px;
+    -webkit-perspective-origin-x : 50%;
+    -webkit-perspective-origin-y : 50%;
+    -moz-perspective : 1200px;
+    -moz-perspective-origin-x : 50%;
+    -moz-perspective-origin-y : 50%;
+    perspective : 1200px;
+}
+
+.index_slider6 .item {
+    width: 960px;
+    height: 350px;
+}
+
+.index_slider6 .item .img-container{
+    position: relative;
+    width: 960px;
+    height: 350px;
+    display: block;
+}
+
+.index_slider6 .item .img-container img {
+    max-width: 960px;
+    max-height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.index_slider6 .owl-carousel .owl-nav [class*=owl-]{
+    width: 28px;
+    height: 44px;
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    margin: 0;
+    margin-top: -22px;
+    opacity: 0.5;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: url('../img/slider-arrows.png');
+}
+
+.index_slider6 .owl-carousel .owl-nav .owl-prev{
+    left: -40px;
+    background-position: 0 0;
+}
+
+.index_slider6 .owl-carousel .owl-nav .owl-next{
+    right: -40px;
+    background-position: -28px 0;
+}
+
+.index_slider6 .owl-carousel .owl-nav .owl-prev:hover,
+.index_slider6 .owl-carousel .owl-nav .owl-next:hover{
+    opacity: 1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+
+.index_slider6 .owl-carousel .owl-nav .owl-prev:active,
+.index_slider6 .owl-carousel .owl-nav .owl-next:active{
+    opacity: 0.8;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+}
+
+.index_slider6 .owl-carousel .owl-nav .owl-prev,
+.index_slider6 .owl-carousel .owl-nav .owl-prev:hover,
+.index_slider6 .owl-carousel .owl-nav .owl-next,
+.index_slider6 .owl-carousel .owl-nav .owl-next{
+    -webkit-transition: opacity 0.1s ease-in-out;
+    -moz-transition: opacity 0.1s ease-in-out;
+    -o-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
+}
+/*---------/INDEX OWL SLIDER 6------------*/
 
 
 /*---------CAROUSEL OWL SLIDER------------*/

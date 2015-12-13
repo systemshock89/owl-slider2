@@ -19,24 +19,24 @@ $(function () {
                     ""
                 ],
 
-                // эффект перелистывания
-                //animateOut: 'slideOutDown',
-                //animateIn: 'flipInX',
-
-                // затухание
-                //animateOut: 'fadeOut',
-
                 // эффект FadeUp
                 animateOut: 'owl-fadeUp-out',
                 animateIn: 'owl-fadeUp-in',
 
-                //глючит
+                // эффект перелистывания
+                //animateOut: 'slideOutDown',
+                //animateIn: 'flipInX',
+
+                //goDown
                 //animateOut: 'owl-goDown-out',
                 //animateIn: 'owl-goDown-in',
 
-                //глючит
+                //backSlide
                 //animateOut: 'owl-backSlide-out',
                 //animateIn: 'owl-backSlide-in',
+
+                // затухание
+                //animateOut: 'fadeOut',
 
             });
 
@@ -75,24 +75,24 @@ $(function () {
                     ""
                 ],
 
-                // эффект перелистывания
-                animateOut: 'slideOutDown',
-                animateIn: 'flipInX',
-
-                // затухание
-                //animateOut: 'fadeOut',
-
                 // эффект FadeUp
                 //animateOut: 'owl-fadeUp-out',
                 //animateIn: 'owl-fadeUp-in',
 
-                //глючит
+                // эффект перелистывания
+                animateOut: 'slideOutDown',
+                animateIn: 'flipInX',
+
+                //goDown
                 //animateOut: 'owl-goDown-out',
                 //animateIn: 'owl-goDown-in',
 
-                //глючит
+                //backSlide
                 //animateOut: 'owl-backSlide-out',
                 //animateIn: 'owl-backSlide-in',
+
+                // затухание
+                //animateOut: 'fadeOut',
             });
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
@@ -130,24 +130,24 @@ $(function () {
                     ""
                 ],
 
-                // эффект перелистывания
-                //animateOut: 'slideOutDown',
-                //animateIn: 'flipInX',
-
-                // затухание
-                animateOut: 'fadeOut',
-
                 // эффект FadeUp
                 //animateOut: 'owl-fadeUp-out',
                 //animateIn: 'owl-fadeUp-in',
 
-                //глючит
-                //animateOut: 'owl-goDown-out',
-                //animateIn: 'owl-goDown-in',
+                // эффект перелистывания
+                //animateOut: 'slideOutDown',
+                //animateIn: 'flipInX',
 
-                //глючит
+                //goDown
+                animateOut: 'owl-goDown-out',
+                animateIn: 'owl-goDown-in',
+
+                //backSlide
                 //animateOut: 'owl-backSlide-out',
                 //animateIn: 'owl-backSlide-in',
+
+                // затухание
+                //animateOut: 'fadeOut',
             });
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
@@ -185,24 +185,24 @@ $(function () {
                     ""
                 ],
 
-                // эффект перелистывания
-                //animateOut: 'slideOutDown',
-                //animateIn: 'flipInX',
-
-                // затухание
-                //animateOut: 'fadeOut',
-
                 // эффект FadeUp
                 //animateOut: 'owl-fadeUp-out',
                 //animateIn: 'owl-fadeUp-in',
 
-                //глючит
+                // эффект перелистывания
+                //animateOut: 'slideOutDown',
+                //animateIn: 'flipInX',
+
+                //goDown
                 //animateOut: 'owl-goDown-out',
                 //animateIn: 'owl-goDown-in',
 
-                //глючит
-                //animateOut: 'owl-backSlide-out',
-                //animateIn: 'owl-backSlide-in',
+                //backSlide
+                animateOut: 'owl-backSlide-out',
+                animateIn: 'owl-backSlide-in',
+
+                // затухание
+                //animateOut: 'fadeOut',
             });
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
@@ -219,6 +219,116 @@ $(function () {
         }
     });
     /* /Index Owl Slider 4 */
+
+
+    /* Index Owl Slider 5 */
+    $(function() {
+        if( $(".index_slider5 .owl-carousel").is("div") ){
+
+            var owl =  $('.index_slider5 .owl-carousel');
+
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 12000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText:  [
+                    "",
+                    ""
+                ],
+
+                // эффект FadeUp
+                //animateOut: 'owl-fadeUp-out',
+                //animateIn: 'owl-fadeUp-in',
+
+                // эффект перелистывания
+                //animateOut: 'slideOutDown',
+                //animateIn: 'flipInX',
+
+                //goDown
+                //animateOut: 'owl-goDown-out',
+                //animateIn: 'owl-goDown-in',
+
+                //backSlide
+                //animateOut: 'owl-backSlide-out',
+                //animateIn: 'owl-backSlide-in',
+
+                // затухание
+                animateOut: 'fadeOut',
+            });
+
+            owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
+            owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
+
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY>0) {
+                    owl.trigger('prev.owl');
+                } else {
+                    owl.trigger('next.owl');
+                }
+                e.preventDefault();
+            });
+        }
+    });
+    /* /Index Owl Slider 5 */
+
+
+    /* Index Owl Slider 6 */
+    $(function() {
+        if( $(".index_slider6 .owl-carousel").is("div") ){
+
+            var owl =  $('.index_slider6 .owl-carousel');
+
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 12000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText:  [
+                    "",
+                    ""
+                ],
+
+                // эффект FadeUp
+                //animateOut: 'owl-fadeUp-out',
+                //animateIn: 'owl-fadeUp-in',
+
+                // эффект перелистывания
+                //animateOut: 'slideOutDown',
+                //animateIn: 'flipInX',
+
+                //goDown
+                //animateOut: 'owl-goDown-out',
+                //animateIn: 'owl-goDown-in',
+
+                //backSlide
+                //animateOut: 'owl-backSlide-out',
+                //animateIn: 'owl-backSlide-in',
+
+                // затухание
+                //animateOut: 'fadeOut',
+            });
+
+            owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
+            owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
+
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY>0) {
+                    owl.trigger('prev.owl');
+                } else {
+                    owl.trigger('next.owl');
+                }
+                e.preventDefault();
+            });
+        }
+    });
+    /* /Index Owl Slider 6 */
 
 
     /* /Carousel Owl Slider */
@@ -348,7 +458,7 @@ $(function () {
                 margin: 10,
                 dots: false,
                 autoplay: true,
-                autoplayTimeout: 2000,
+                autoplayTimeout: 12000,
                 autoplayHoverPause: true,
                 touchDrag: false,
                 mouseDrag : false
