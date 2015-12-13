@@ -349,7 +349,22 @@ $(function () {
                     "",
                     ""
                 ],
-                dots: false
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1,
+                        margin: 5,
+                        nav: false,
+                        dots: true,
+                        stagePadding: 25,
+                        loop: true
+                    },
+                    650:{
+                        items:4,
+                        nav: false,
+                        dots: true
+                    }
+                }
             });
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
@@ -387,7 +402,19 @@ $(function () {
                     ""
                 ],
                 dots: false,
-                autoHeight: true
+                autoHeight: true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav: false,
+                        dots: true
+                    },
+                    650:{
+                        items:4,
+                        nav: false,
+                        dots: true
+                    }
+                }
             });
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
@@ -425,7 +452,19 @@ $(function () {
                 ],
                 stagePadding: 50,
                 center: true,
-                loop:true
+                loop:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        margin: 5,
+                        nav: false,
+                        stagePadding: 25
+                    },
+                    650:{
+                        items:4,
+                        nav: false
+                    }
+                }
             });
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
@@ -485,7 +524,15 @@ $(function () {
                     "",
                     ""
                 ],
-                dots: false
+                dots: false,
+                responsive:{
+                    0:{
+                        items:3
+                    },
+                    650:{
+                        items:4
+                    }
+                }
             })
             .on('click', '.owl-item', function () {
                 $sync1.trigger('to.owl.carousel', [$(this).index(), duration, true]);
