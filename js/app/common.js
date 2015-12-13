@@ -20,11 +20,23 @@ $(function () {
                 ],
 
                 // эффект перелистывания
-                animateOut: 'slideOutDown',
-                animateIn: 'flipInX',
+                //animateOut: 'slideOutDown',
+                //animateIn: 'flipInX',
 
                 // затухание
-                //animateOut: 'fadeOut'
+                //animateOut: 'fadeOut',
+
+                // эффект FadeUp
+                animateOut: 'owl-fadeUp-out',
+                animateIn: 'owl-fadeUp-in',
+
+                //глючит
+                //animateOut: 'owl-goDown-out',
+                //animateIn: 'owl-goDown-in',
+
+                //глючит
+                //animateOut: 'owl-backSlide-out',
+                //animateIn: 'owl-backSlide-in',
             });
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
