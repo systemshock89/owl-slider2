@@ -1,5 +1,6 @@
 $(function () {
 
+    /* Index Owl Slider */
     $(function() {
         if( $(".index_slider .owl-carousel").is("div") ){
 
@@ -17,17 +18,32 @@ $(function () {
                     "",
                     ""
                 ],
+
+                // эффект перелистывания
                 animateOut: 'slideOutDown',
                 animateIn: 'flipInX'
+
+                // затухание
+                //animateOut: 'fadeOut'
             });
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
             owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
+
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY>0) {
+                    owl.trigger('prev.owl');
+                } else {
+                    owl.trigger('next.owl');
+                }
+                e.preventDefault();
+            });
         }
     });
+    /* /Index Owl Slider */
 
 
-    /* Owl Slider */
+    /* /Carousel Owl Slider */
     $(function () {
         if ($(".carousel_slider .owl-carousel").is("div")) {
 
@@ -36,7 +52,7 @@ $(function () {
             owl.owlCarousel({
                 items: 5,
                 rewind:true,
-                margin: 24,
+                margin: 10,
                 autoplay: true,
                 autoplayTimeout: 12000,
                 autoplayHoverPause: true,
@@ -50,21 +66,30 @@ $(function () {
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
             owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
+
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY>0) {
+                    owl.trigger('prev.owl');
+                } else {
+                    owl.trigger('next.owl');
+                }
+                e.preventDefault();
+            });
         }
     });
-    /* /Owl Slider */
+    /* /Carousel Owl Slider */
 
 
-    /* Owl Slider 2 */
+    /* Carousel Owl Slider 2 */
     $(function () {
         if ($(".carousel_slider2 .owl-carousel").is("div")) {
 
             var owl = $('.carousel_slider2 .owl-carousel');
 
             owl.owlCarousel({
-                items: 3,
+                items: 5,
                 rewind:true,
-                margin: 75,
+                margin: 10,
                 //autoplay: true,
                 autoplayTimeout: 12000,
                 autoplayHoverPause: true,
@@ -79,9 +104,57 @@ $(function () {
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
             owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
+
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY>0) {
+                    owl.trigger('prev.owl');
+                } else {
+                    owl.trigger('next.owl');
+                }
+                e.preventDefault();
+            });
         }
     });
-    /* /Owl Slider 2 */
+    /* /Carousel Owl Slider 2 */
+
+
+    /* /Carousel Owl Slider 3 */
+    $(function () {
+        if ($(".carousel_slider3 .owl-carousel").is("div")) {
+
+            var owl = $('.carousel_slider3 .owl-carousel');
+
+            owl.owlCarousel({
+                items: 5,
+                rewind:true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 12000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText:  [
+                    "",
+                    ""
+                ],
+                stagePadding: 50,
+                center: true,
+                loop:true
+            });
+
+            owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
+            owl.find('.owl-nav .owl-next').attr('title', 'Следующий');
+
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY>0) {
+                    owl.trigger('prev.owl');
+                } else {
+                    owl.trigger('next.owl');
+                }
+                e.preventDefault();
+            });
+        }
+    });
+    /* /Carousel Owl Slider 3 */
 
 
     /* SYNCED Owl Slider */
@@ -171,6 +244,27 @@ $(function () {
 
             return "stayStill";
         }
+
+        $sync1.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY>0) {
+                $sync1.trigger('prev.owl');
+            } else {
+                $sync1.trigger('next.owl');
+            }
+            e.preventDefault();
+        });
+
+        $sync2.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY>0) {
+                $sync2.trigger('prev.owl');
+            } else {
+                $sync2.trigger('next.owl');
+            }
+            e.preventDefault();
+        });
+
+        $sync2.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
+        $sync2.find('.owl-nav .owl-next').attr('title', 'Следующий');
 
     }
     /* /SYNCED Owl Slider */
