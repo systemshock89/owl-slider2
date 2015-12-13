@@ -21,7 +21,7 @@ $(function () {
 
                 // эффект перелистывания
                 animateOut: 'slideOutDown',
-                animateIn: 'flipInX'
+                animateIn: 'flipInX',
 
                 // затухание
                 //animateOut: 'fadeOut'
@@ -126,7 +126,6 @@ $(function () {
 
             owl.owlCarousel({
                 items: 5,
-                rewind:true,
                 margin: 10,
                 autoplay: true,
                 autoplayTimeout: 12000,
@@ -204,47 +203,6 @@ $(function () {
                 $sync1.trigger('to.owl.carousel', [$(this).index(), duration, true]);
             });
 
-        //adds 'current' class to the thumbnail
-        function addClassCurrent( index ) {
-            $sync2
-                .find(".owl-item")
-                .removeClass("current")
-                .eq( index ).addClass("current");
-        }
-
-        //syncs positions. argument 'index' represents absolute position of the element
-        function syncPosition( index ) {
-
-            //PART 1 (adds 'current' class to thumbnail)
-            addClassCurrent( index );
-
-
-            //PART 2 (counts position)
-
-            var itemsNo = $sync2.find(".owl-item").length; //total items
-            var visibleItemsNo = $sync2.find(".owl-item.active").length; //visible items
-
-            //if all items are visible
-            if (itemsNo === visibleItemsNo) {
-                return "stayStill";
-            }
-
-            //relative index (if 4 elements are visible and the 2nd of them has class 'current', returns index = 1)
-            var visibleCurrentIndex = $sync2.find(".owl-item.active").index( $sync2.find(".owl-item.current") );
-
-            //if it's first visible element and if there is hidden element before it
-            if (visibleCurrentIndex == 0 && index != 0) {
-                return index - 1;
-            }
-
-            //if it's last visible element and if there is hidden element after it
-            if (visibleCurrentIndex == (visibleItemsNo - 1) && index != (itemsNo - 1)) {
-                return index - visibleItemsNo + 2;
-            }
-
-            return "stayStill";
-        }
-
         $sync1.on('mousewheel', '.owl-stage', function (e) {
             if (e.deltaY>0) {
                 $sync1.trigger('prev.owl');
@@ -266,6 +224,47 @@ $(function () {
         $sync2.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
         $sync2.find('.owl-nav .owl-next').attr('title', 'Следующий');
 
+    }
+
+    //adds 'current' class to the thumbnail
+    function addClassCurrent( index ) {
+        $sync2
+            .find(".owl-item")
+            .removeClass("current")
+            .eq( index ).addClass("current");
+    }
+
+    //syncs positions. argument 'index' represents absolute position of the element
+    function syncPosition( index ) {
+
+        //PART 1 (adds 'current' class to thumbnail)
+        addClassCurrent( index );
+
+
+        //PART 2 (counts position)
+
+        var itemsNo = $sync2.find(".owl-item").length; //total items
+        var visibleItemsNo = $sync2.find(".owl-item.active").length; //visible items
+
+        //if all items are visible
+        if (itemsNo === visibleItemsNo) {
+            return "stayStill";
+        }
+
+        //relative index (if 4 elements are visible and the 2nd of them has class 'current', returns index = 1)
+        var visibleCurrentIndex = $sync2.find(".owl-item.active").index( $sync2.find(".owl-item.current") );
+
+        //if it's first visible element and if there is hidden element before it
+        if (visibleCurrentIndex == 0 && index != 0) {
+            return index - 1;
+        }
+
+        //if it's last visible element and if there is hidden element after it
+        if (visibleCurrentIndex == (visibleItemsNo - 1) && index != (itemsNo - 1)) {
+            return index - visibleItemsNo + 2;
+        }
+
+        return "stayStill";
     }
     /* /SYNCED Owl Slider */
 
