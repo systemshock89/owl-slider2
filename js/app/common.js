@@ -363,7 +363,13 @@ $(function () {
                         items:4,
                         nav: false,
                         dots: true
+                    },
+                    1000:{
+                        items: 5,
+                        margin: 10,
+                        nav: true
                     }
+
                 }
             });
 
@@ -413,6 +419,11 @@ $(function () {
                         items:4,
                         nav: false,
                         dots: true
+                    },
+                    1000:{
+                        items: 5,
+                        margin: 10,
+                        nav: true
                     }
                 }
             });
@@ -463,6 +474,12 @@ $(function () {
                     650:{
                         items:4,
                         nav: false
+                    },
+                    1000:{
+                        items: 5,
+                        margin: 10,
+                        nav: true,
+                        stagePadding: 50
                     }
                 }
             });
@@ -517,7 +534,6 @@ $(function () {
             .owlCarousel({
                 items: 4,
                 rewind:true,
-                //center: true,
                 margin: 18,
                 nav: true,
                 navText:  [
@@ -527,10 +543,14 @@ $(function () {
                 dots: false,
                 responsive:{
                     0:{
-                        items:3
+                        items:3,
+                        nav: false
                     },
                     650:{
                         items:4
+                    },
+                    1000:{
+
                     }
                 }
             })
