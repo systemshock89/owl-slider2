@@ -21,7 +21,7 @@ $(function () {
 
                 // эффект FadeUp
                 animateOut: 'owl-fadeUp-out',
-                animateIn: 'owl-fadeUp-in',
+                animateIn: 'owl-fadeUp-in'
 
                 // эффект перелистывания
                 //animateOut: 'slideOutDown',
@@ -81,7 +81,7 @@ $(function () {
 
                 // эффект перелистывания
                 animateOut: 'slideOutDown',
-                animateIn: 'flipInX',
+                animateIn: 'flipInX'
 
                 //goDown
                 //animateOut: 'owl-goDown-out',
@@ -140,7 +140,7 @@ $(function () {
 
                 //goDown
                 animateOut: 'owl-goDown-out',
-                animateIn: 'owl-goDown-in',
+                animateIn: 'owl-goDown-in'
 
                 //backSlide
                 //animateOut: 'owl-backSlide-out',
@@ -199,7 +199,7 @@ $(function () {
 
                 //backSlide
                 animateOut: 'owl-backSlide-out',
-                animateIn: 'owl-backSlide-in',
+                animateIn: 'owl-backSlide-in'
 
                 // затухание
                 //animateOut: 'fadeOut',
@@ -257,7 +257,7 @@ $(function () {
                 //animateIn: 'owl-backSlide-in',
 
                 // затухание
-                animateOut: 'fadeOut',
+                animateOut: 'fadeOut'
             });
 
             owl.find('.owl-nav .owl-prev').attr('title', 'Предыдущий');
@@ -293,7 +293,7 @@ $(function () {
                 navText:  [
                     "",
                     ""
-                ],
+                ]
 
                 // эффект FadeUp
                 //animateOut: 'owl-fadeUp-out',
